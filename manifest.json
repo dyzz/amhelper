@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "content_scripts": [ {
+    "all_frames": true,
+    "js": [ "amhelper.js" ],
+    "matches":["http://*/*"],
+    "permissions": [
+      "http://192.168.*.*:8000/*"
+    ],
+    "run_at": "document_end"
+  } ],
+  "description": "Make OOXX clear",
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "name": "ASICMiner Helper",
+  "version" : "0.1"
+}
